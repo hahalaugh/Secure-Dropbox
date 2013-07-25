@@ -147,9 +147,13 @@ class SecureDropbox_UI(object):
     def file_load_processor(self):
         
         f = self.load_file_path()
+        
         if f:
-            if self.secure_dropbox.load_file_into_secure_dropbox(f) == CONFIG.UPLOAD_KEY_CHAIN_SUCCEED:
+            res = self.secure_dropbox.load_file_into_secure_dropbox(f)
+            if res == CONFIG.UPLOAD_KEY_CHAIN_SUCCEED:
                 print 'upload doc keychain upload succeed'
+            elif res == CONFIG.UPLOAD_KEY_CHAIN_EXISTED:
+                print 'upload doc keychain existed and replaced with new doc key.'
             else:
                 print 'upload doc keychain failed'
         else:
@@ -166,7 +170,9 @@ class SecureDropbox_UI(object):
         
         file_sequence = int(file_sequence)
         
-        if file_sequence > 0 and file_sequence <= len(file_list):
+        if not file_list:
+            print 'No file to read'
+        elif file_sequence > 0 and file_sequence <= len(file_list):
             path = self.secure_dropbox.secure_dropbox_folder_path + os.path.sep + file_list[file_sequence - 1][1]
             content = self.secure_dropbox.read_file(path)
             print content
@@ -207,8 +213,11 @@ class SecureDropbox_UI(object):
                 flag = str(flag)
             else:
                 print "invalid input"
-
-        print self.secure_dropbox.read_shared_file(shared_file_list[flag]['doc_key'], shared_file_list[flag]['url'])
+        
+        if flag != -1:
+            print self.secure_dropbox.read_shared_file(shared_file_list[flag]['doc_key'], shared_file_list[flag]['url'])
+        else:
+            print 'Nothing to read'
 
     def login_UI(self):
 

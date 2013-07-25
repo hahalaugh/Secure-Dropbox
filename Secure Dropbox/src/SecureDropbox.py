@@ -20,6 +20,10 @@ class SecureDropbox(object):
         self.cryptor = None
         self.dropbox_folder_path = dropbox_folder_path
         self.secure_dropbox_folder_path = self.dropbox_folder_path + r'\Secure Dropbox'
+        
+        if not os.path.isdir(self.secure_dropbox_folder_path):
+            os.mkdir(self.secure_dropbox_folder_path)
+        
         self.ini_file = self.secure_dropbox_folder_path + os.path.sep + self.user.username + CONFIG.INI_FILE
 
     def generate_pickle_key(self):
@@ -58,7 +62,7 @@ class SecureDropbox(object):
             self.encrypt_ini()
             return True
         else:
-            print ("login failed. Unauthorized user")
+            print ("login failed. Unauthorized user or Server not available")
             return False
 
     def share_file(self, user_to_share_with, file_to_share):

@@ -4,10 +4,13 @@ APP_KEY = 'c8ht5mh6z6y5g82'
 APP_SECRET = 'jaonmrivtj18vdd'
 ACCESS_TYPE = 'dropbox'
 
+EMAIL_ADDRESS = 'notification.secure.dropbox@gmail.com'
+EMAIL_PASSWORD = 'dissertation'
+
 FAILED_LOGIN_TOKEN = -1
 
 SERVER_URL = 'http://127.0.0.1:8080/'
-INI_FILE = '_secure_dropbox.ini'
+INI_FILE = 'secure_dropbox.ini'
 TTE = 3600
 
 DELETE_KEY_SUCCEED = 'DELETE KEY SUCCEED'
@@ -48,3 +51,4 @@ SHA_ITERATION = 1000
 KEY_LEN = 32
 
 BS = 16
+

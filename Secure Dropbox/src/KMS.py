@@ -3,6 +3,7 @@ import json
 import urllib2
 import os
 import M2Crypto
+import sys
 
 class KMS_Handler(object):
     def __init__(self, cryptor):
@@ -25,13 +26,15 @@ class KMS_Handler(object):
 
         response = self.send_request_to_server(url, values)
         doc_keychain = 0
-        if response is not None:
+        if response:
             res = json.loads(response.read())
             if res['token'] != CONFIG.FAILED_LOGIN_TOKEN:
                 doc_keychain = self.download_doc_keychain(username, password, res['token'])
 
-        return res['token'], res['pub_key'], res['priv_key'], doc_keychain
-
+            return res['token'], res['pub_key'], res['priv_key'], doc_keychain
+        
+        else:
+            return None, None, None, None
     def download_doc_keychain(self, username, password, token):
 
         url = CONFIG.SERVER_URL + 'fetch_own_doc_keychain'
@@ -65,8 +68,9 @@ class KMS_Handler(object):
                     'token': token}
 
         response = self.send_request_to_server(url, values)
-        if response:
-            return json.loads(response.read())
+        res = response.read()
+        if res:
+            return json.loads(res)
         else:
             return None
 
@@ -124,7 +128,8 @@ class KMS_Handler(object):
 
         response = self.send_request_to_server(url, values)
 
-        if response.read() == CONFIG.FILE_SHARING_SUCCEED:
+        res = response.read()
+        if res == CONFIG.FILE_SHARING_SUCCEED or res == CONFIG.FILE_SHARING_EXISTED:
             return True
         else:
             return False
