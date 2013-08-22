@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#To create a PDF out of a .tex
+
+echo Compiling latex
+file="thesis.tex"
+
+latex $file
+
+pdf=`echo "$file"|sed -e 's/tex/pdf/'`
+dvi=`echo "$file"|sed -e 's/tex/dvi/'`
+dvipdf $dvi $pdf
+
+echo --------------------------------
+echo --------------------------------
+echo --------------------------------
+echo Will now convert $file to a .pdf
+echo Opening $pdf
+
+evince $pdf &
+

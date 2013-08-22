@@ -1,0 +1,140 @@
+\begin{thebibliography}{10}
+
+\bibitem{Mell2011}
+P.~Mell and T.~Grance, ``{The NIST Definition of Cloud Computing ( Draft )
+  Recommendations of the National Institute of Standards and Technology},''
+  2011.
+
+\bibitem{Dillon2010}
+T.~Dillon, C.~Wu, and E.~Chang, ``{Cloud Computing: Issues and Challenges},''
+  {\em 2010 24th IEEE International Conference on Advanced Information
+  Networking and Applications}, pp.~27--33, 2010.
+
+\bibitem{Zhang2010}
+Q.~Zhang, L.~Cheng, and R.~Boutaba, ``{Cloud computing: state-of-the-art and
+  research challenges},'' {\em Journal of Internet Services and Applications},
+  vol.~1, pp.~7--18, Apr. 2010.
+
+\bibitem{Cachin2009}
+C.~Cachin and A.~Shraer, ``{Trusting the Cloud},'' {\em ACM SIGACT News},
+  vol.~40, no.~2, pp.~81--86, 2009.
+
+\bibitem{OPSWAT2011}
+OPSWAT, ``{Security Industry Market Share Analysis},'' Tech. Rep. June, OPSWAT,
+  2011.
+
+\bibitem{Beaver2003}
+D.~Beaver, ``{Network security and storage security: symmetries and
+  symmetry-breaking},'' {\em Proceedings of the First International IEEE
+  Security in Storage Workshop (SISW’02)}, 2003.
+
+\bibitem{Kumar2010}
+P.~S. Kumar, R.~Subramanian, and D.~T. Selvam, ``{Ensuring data storage
+  security in cloud computing using Sobol Sequence},'' {\em 2010 First
+  International Conference On Parallel, Distributed and Grid Computing (PDGC
+  2010)}, pp.~217--222, Oct. 2010.
+
+\bibitem{Intel2012}
+Intel, ``{What's Holding Back the Cloud ?},'' Tech. Rep. May, Intel, 2012.
+
+\bibitem{Subashini2011}
+S.~Subashini and V.~Kavitha, ``{A survey on security issues in service delivery
+  models of cloud computing},'' {\em Journal of Network and Computer
+  Applications}, vol.~34, pp.~1--11, Jan. 2011.
+
+\bibitem{Ou2005}
+X.~Ou, S.~Govindavajhala, and A.~W. Appel, ``{MulVAL: A Logic-based Network
+  Security Analyzer},'' {\em Security '05 Technical Program}, 2005.
+
+\bibitem{Rob1982}
+D.~E. Rob, {\em {Cryptography and Data Security}}.
+\newblock Addison-Wesley Publishing Company, Inc., 1~ed., 1982.
+
+\bibitem{Laboratories1993}
+A.~B.~L. {Blaze, Matt}, ``{A Cryptographic File System for Unix},'' {\em 1st
+  Conf.- Computer \& Comm. Security}, vol.~4, 1993.
+
+\bibitem{Ghemawat2003}
+S.~Ghemawat, H.~Gobioff, and S.-T. Leung, ``{The Google file system},'' {\em
+  ACM SIGOPS Operating Systems Review}, vol.~37, p.~29, Dec. 2003.
+
+\bibitem{Dropbox2013}
+Dropbox, ``{How secure is Dropbox?},'' 2013.
+
+\bibitem{Icaza2011}
+M.~de~Icaza, ``{Dropbox Lack of Security},'' 2011.
+
+\bibitem{Dhillon2001}
+G.~Dhillon and S.~Moores, ``{Computer crimes: theorizing about the enemy
+  within},'' {\em Computers \& Security}, vol.~20, pp.~715--723, Dec. 2001.
+
+\bibitem{Yao2010}
+J.~Yao, S.~Chen, S.~Nepal, D.~Levy, and J.~Zic, ``{TrustStore: Making Amazon S3
+  Trustworthy with Services Composition},'' {\em 2010 10th IEEE/ACM
+  International Conference on Cluster, Cloud and Grid Computing}, pp.~600--605,
+  2010.
+
+\bibitem{Uppalli2003}
+R.~Uppalli and C.~Killian, ``{Analysis of techniques for building intrusion
+  tolerant server systems},'' {\em IEEE Military Communications Conference,
+  2003. MILCOM 2003.}, vol.~2, pp.~729--734, 2003.
+
+\bibitem{Kamara2010}
+S.~Kamara and K.~Lauter, ``{Cryptographic Cloud Storage},'' {\em
+  IFCA/Springer-Verlag Berlin Heidelberg}, pp.~136--149, 2010.
+
+\bibitem{Xiaodong2000}
+D.~Xiaodong, S.~David, and W.~Adrian, ``{Practical Techniques for Searches on
+  Encrypted Data £},'' {\em Security and Privacy, 2000. S$\backslash$\&P 2000.
+  Proceedings. 2000 IEEE Symposium on}, 2000.
+
+\bibitem{Curtmola2006}
+R.~Curtmola, J.~Garay, and M.~Hill, ``{Searchable Symmetric Encryption
+  :Improved Definitions and Efficient Constructions},'' {\em CCS’06, October
+  30–November 3, 2006, Alexandria, Virginia, USA.}, pp.~79--88, 2006.
+
+\bibitem{Mfisk2013}
+Mfisk, ``{Why Map-Reduce?},'' 2013.
+
+\bibitem{ErikRiedelMaheshKallahalla2002}
+{Erik Riedel, Mahesh Kallahalla} and R.~Swaminathan, ``{A framework for
+  evaluating storage system security},'' {\em FAST}, pp.~15--30, 2002.
+
+\bibitem{Vaquero2010}
+L.~M. Vaquero, L.~Rodero-Merino, and D.~Mor\'{a}n, ``{Locking the sky: a survey
+  on IaaS cloud security},'' {\em Computing}, vol.~91, pp.~93--118, Nov. 2010.
+
+\bibitem{Dropbox2012}
+Dropbox, ``{Dropbox Security Overview},'' 2012.
+
+\bibitem{Bellare1997}
+M.~Bellare, a.~Desai, E.~Jokipii, and P.~Rogaway, ``{A concrete security
+  treatment of symmetric encryption},'' {\em Proceedings 38th Annual Symposium
+  on Foundations of Computer Science}, pp.~394--403, 1997.
+
+\bibitem{Information2001}
+NIST, ``{Announcing the ADVANCED ENCRYPTION STANDARD ( AES )},'' {\em Federal
+  Information Processing Standards Publication 197 November}, 2001.
+
+\bibitem{National2003}
+{National Security Agency}, ``{National Policy on the Use of the Advanced
+  Encryption Standard (AES) to Protect National Security Systems and National
+  Security Information},'' {\em CNSS Policy No. 15, Fact Sheet No. 1},
+  vol.~6716, no.~15, pp.~1--3, 2003.
+
+\bibitem{Publication2007}
+{Elaine Barker, William Barker, William Burr, William Polk} and M.~Smid,
+  ``{Recommendation for Key Management Part 1: General},'' {\em NIST Special
+  Publication 800-57 Part 1, Revised}, 2007.
+
+\bibitem{Kaliski2009}
+B.~Kaliski, ``{TWIRL and RSA Key Size},'' 2009.
+
+\bibitem{Merkle1990}
+R.~C. Merkle, ``{A fast software one-way hash function},'' {\em Journal of
+  Cryptology}, vol.~3, pp.~43--58, 1990.
+
+\bibitem{BoxCryptor2013}
+BoxCryptor, ``{BoxCryptor},'' 2013.
+
+\end{thebibliography}

@@ -1,0 +1,17 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: chapter1.aux
+A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: chapter4.aux
+A level-1 auxiliary file: chapter5.aux
+A level-1 auxiliary file: chapter6.aux
+A level-1 auxiliary file: appendix1.aux
+A level-1 auxiliary file: appendix2.aux
+A level-1 auxiliary file: appendix3.aux
+The style file: ieeetr.bst
+Database file #1: Bibliography.bib
+Name 1 in "{Erik Riedel, Mahesh Kallahalla}, and Ram Swaminathan" has a comma at the end for entry ErikRiedelMaheshKallahalla2002
+while executing---line 963 of file ieeetr.bst
+Name 1 in "{Elaine Barker, William Barker, William Burr, William Polk}, and Miles Smid" has a comma at the end for entry Publication2007
+while executing---line 963 of file ieeetr.bst
+(There were 2 error messages)

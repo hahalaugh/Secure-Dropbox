@@ -1,0 +1,12 @@
+\chapter{Implementation Module Dependence}
+
+\begin{tabular}{p{40mm}|p{100mm}}
+	\textbf{Name}&\textbf{URL}\\
+	\hline
+    PyCrypto&https://www.dlitz.net/software/pycrypto/ \\
+    M2Crypto&http://chandlerproject.org/Projects/MeTooCrypto \\
+    Dropbox&https://www.dropbox.com/developers/core/sdks/python \\
+    PBKDF2&https://github.com/mitsuhiko/python-pbkdf2 \\
+    Werkzeug&http://werkzeug.pocoo.org/ \\
+    bottle&http://bottlepy.org/docs/dev/
+\end{tabular}

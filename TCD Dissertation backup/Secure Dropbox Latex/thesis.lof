@@ -1,0 +1,47 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Customer Architecture}}{12}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Secure Dropbox Architecture}}{15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Encrypted File Storage and Reading}}{17}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Encrypted File Sharing}}{18}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces KMS Architecture}}{19}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Strength Equivalence}}{23}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Hash Table}}{24}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Hash Table with Parameters}}{25}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Dropbox Core API}}{27}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Cryptography Deployment}}{29}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Path Representation Schema}}{32}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Platform Independent Coding Style}}{32}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Amazon EC2 Server Monitoring}}{33}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Amazon EC2 Security Customization}}{34}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Amazon EC2 SSH Procedure}}{35}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Restful WebService Programming}}{36}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces HTTP POST Request Generating}}{37}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces KMS Interfaces}}{38}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces KMS Database Design}}{39}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Hashed Passwords}}{40}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Sharing Notification}}{41}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Sharing Notification Implementation}}{41}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Secure Dropbox Client Architecture}}{43}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Running Environment Detection}}{44}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Secure Dropbox Commands}}{45}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Command Print Information}}{45}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Command Print Information II}}{46}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces File Dialog Implementation}}{46}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Application Settings of Secure Dropbox}}{47}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Dropbox OAuth Service}}{48}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Return Value of Dropbox Core API}}{48}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces AES Key Generation}}{49}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces KMS Data Package Generation}}{49}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces User Instance in Local KMS}}{51}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces RSA Key Pair Generation}}{52}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Replacements of Newline Characters}}{52}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Testing Environment}}{54}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Secure Dropbox Cryptography Performances }}{55}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

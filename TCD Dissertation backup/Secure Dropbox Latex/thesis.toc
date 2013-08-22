@@ -1,0 +1,79 @@
+\contentsline {chapter}{Acknowledgments}{iv}
+\contentsline {chapter}{Abstract}{v}
+\contentsline {chapter}{List of Tables}{xi}
+\contentsline {chapter}{List of Figures}{xii}
+\contentsline {chapter}{Chapter{} \numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Motivation}{3}
+\contentsline {section}{\numberline {1.2}This Report}{5}
+\contentsline {chapter}{Chapter{} \numberline {2}State of the Art}{6}
+\contentsline {section}{\numberline {2.1}Introduction}{6}
+\contentsline {section}{\numberline {2.2}Cryptography}{7}
+\contentsline {subsection}{\numberline {2.2.1}User-level Cryptography}{7}
+\contentsline {subsection}{\numberline {2.2.2}System-level Cryptography}{7}
+\contentsline {section}{\numberline {2.3}Secure Storage in the Cloud}{8}
+\contentsline {subsection}{\numberline {2.3.1}Security in Dropbox}{9}
+\contentsline {subsection}{\numberline {2.3.2}Security in Google Drive}{9}
+\contentsline {subsection}{\numberline {2.3.3}Storage Security Risks in the Cloud}{10}
+\contentsline {section}{\numberline {2.4}Searchable Symmetric Encryption}{11}
+\contentsline {section}{\numberline {2.5}FileMap}{12}
+\contentsline {chapter}{Chapter{} \numberline {3}Design}{14}
+\contentsline {section}{\numberline {3.1}Application of Cryptography}{16}
+\contentsline {section}{\numberline {3.2}Key Management Service}{18}
+\contentsline {subsection}{\numberline {3.2.1}KMS User Authentication}{19}
+\contentsline {subsection}{\numberline {3.2.2}KMS RSA Key Pair Management}{20}
+\contentsline {subsection}{\numberline {3.2.3}KMS Doc Key Management}{20}
+\contentsline {subsection}{\numberline {3.2.4}KMS Sharing Information Management}{20}
+\contentsline {subsection}{\numberline {3.2.5}Local KMS}{21}
+\contentsline {section}{\numberline {3.3}Right Cryptography Algorithm}{21}
+\contentsline {subsection}{\numberline {3.3.1}Symmetric Cryptography}{21}
+\contentsline {subsection}{\numberline {3.3.2}Asymmetric Cryptography}{22}
+\contentsline {subsection}{\numberline {3.3.3}Cryptographic Hash Function}{24}
+\contentsline {section}{\numberline {3.4}Integration with Dropbox}{26}
+\contentsline {section}{\numberline {3.5}C/S or B/S}{28}
+\contentsline {chapter}{Chapter{} \numberline {4}Implementation}{30}
+\contentsline {section}{\numberline {4.1}Implementation Dependencies}{30}
+\contentsline {subsection}{\numberline {4.1.1}Secure Dropbox Client}{30}
+\contentsline {subsection}{\numberline {4.1.2}Secure Dropbox KMS}{32}
+\contentsline {section}{\numberline {4.2}Communication}{35}
+\contentsline {section}{\numberline {4.3}Secure Dropbox KMS Implementation}{37}
+\contentsline {subsection}{\numberline {4.3.1}Database Design}{38}
+\contentsline {subsection}{\numberline {4.3.2}KMS User Management}{39}
+\contentsline {subsection}{\numberline {4.3.3}KMS Key Management}{40}
+\contentsline {subsection}{\numberline {4.3.4}KMS File Sharing Management}{41}
+\contentsline {section}{\numberline {4.4}Secure Dropbox Client Implementation}{42}
+\contentsline {subsection}{\numberline {4.4.1}Secure Dropbox UI}{43}
+\contentsline {subsection}{\numberline {4.4.2}Dropbox Handler}{46}
+\contentsline {subsection}{\numberline {4.4.3}Cryptor Handler}{48}
+\contentsline {subsection}{\numberline {4.4.4}KMS Handler}{49}
+\contentsline {subsection}{\numberline {4.4.5}Configuration Module}{50}
+\contentsline {subsection}{\numberline {4.4.6}Secure Dropbox Module}{50}
+\contentsline {chapter}{Chapter{} \numberline {5}Analysis}{53}
+\contentsline {section}{\numberline {5.1}Evaluation Approaches}{53}
+\contentsline {section}{\numberline {5.2}Performance Testing}{54}
+\contentsline {subsection}{\numberline {5.2.1}Testing Schema}{54}
+\contentsline {subsection}{\numberline {5.2.2}Performance Evaluation}{54}
+\contentsline {section}{\numberline {5.3}User Experience}{55}
+\contentsline {subsection}{\numberline {5.3.1}Session Procedure}{55}
+\contentsline {subsection}{\numberline {5.3.2}None IT Background Users Feedback}{56}
+\contentsline {subsection}{\numberline {5.3.3}IT Background Users Feedback}{57}
+\contentsline {section}{\numberline {5.4}Discussion of Feedback}{58}
+\contentsline {chapter}{Chapter{} \numberline {6}Conclusion}{60}
+\contentsline {section}{\numberline {6.1}Results}{60}
+\contentsline {subsection}{\numberline {6.1.1}Was An Effective User End Encryption Tool Developed?}{60}
+\contentsline {section}{\numberline {6.2}Criticism}{61}
+\contentsline {subsection}{\numberline {6.2.1}Design Criticism}{61}
+\contentsline {subsection}{\numberline {6.2.2}Implementation Criticism}{61}
+\contentsline {subsection}{\numberline {6.2.3}Testing Criticism}{62}
+\contentsline {section}{\numberline {6.3}Future Work}{62}
+\contentsline {subsection}{\numberline {6.3.1}Version Control and File Recovering}{62}
+\contentsline {subsection}{\numberline {6.3.2}User Profile Management}{62}
+\contentsline {subsection}{\numberline {6.3.3}Improvement of Sharing Mechanism}{63}
+\contentsline {subsection}{\numberline {6.3.4}File Sharing Refreshing}{63}
+\contentsline {subsection}{\numberline {6.3.5}File System Level Encryption}{63}
+\contentsline {subsection}{\numberline {6.3.6}Configuration Interface}{64}
+\contentsline {subsection}{\numberline {6.3.7}Multi-platform Implementation}{64}
+\contentsline {subsection}{\numberline {6.3.8}Better Local KMS Mechanism}{64}
+\contentsline {chapter}{Appendix{} \numberline {A}Implementation Module Dependence}{65}
+\contentsline {chapter}{Appendix{} \numberline {B}Task Description}{66}
+\contentsline {chapter}{Appendix{} \numberline {C}Questionnaire}{68}
+\contentsline {chapter}{Bibliography}{70}

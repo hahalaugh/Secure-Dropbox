@@ -1,0 +1,59 @@
+\chapter{Conclusion}
+
+This chapter draws some conclusions from evaluation results achieved from user testing session and summarizes some criticisms of the project. The future work planned for the Secure Dropbox is then proposed.
+
+\section{Results}
+
+\subsection{Was An Effective User End Encryption Tool Developed?}
+
+The best approach to appropriately illustrate the idea of user end encryption tools and asymmetric cryptography based secure sharing mechanism is to build a working prototype. Secure Dropbox accomplishes one and the most key ideas in accordance with security have been expressed. Secure Dropbox does not invent anything but applied a cryptography combination in a new application scenario. Its security is based on classic, strict, widely used and universally accepted cryptography algorithm. The design makes it zero-knowledge software: Secure Dropbox never has access to the file or even the encryption keys. Statically stored data that should be kept as secrets are unquestionably stored confidentially. It undeniably gains users’ confidence when using public cloud storage to store their confidential documentations according to the user testing feedbacks. Secure Dropbox users will never work with unencrypted files in their Dropbox which are ready to share with a small conversion upon the encryption key. Secure Dropbox could already be thought as a successful user end encryption tool to some extent.
+
+However, it is still far from being a commercial software product. It provides a higher level of security but at the same time disables some important features of Dropbox. Actually, to most uncommercial users, the stability and fault-tolerance of a cloud storage are often considered as much as security. The trade-off will be absolutely there until these problems have been solved. Now Secure Dropbox is only implemented as prototype.
+
+\section{Criticism}
+
+\subsection{Design Criticism}
+
+Although it explains the main idea of Secure Dropbox, the project is designed only for demonstration purpose. It lacks essential features that could actually make a better idea expression. For example, a logging module is always built in any software. The potential fault-tolerance and error recovering features of Secure Dropbox could have been illustrated by implementing an embedded logging module. It also lacks of consideration about availability such as it was designed to grant user with a minimum file reading permission in Secure Dropbox local mode. Although most timely Dropbox application based synchronization works robustly, no fault recovering or feedback is provided when errors occur. It is because Dropbox application is not designed to be based on by another application so there is no programmable interface provided. Dropbox core API is the only recommended way to implement a third-party application of Dropbox.
+
+\subsection{Implementation Criticism}
+
+The user space cryptography implementation essentially narrows down the supported file types by Secure Dropbox. For this stage only text file is supported and to support a new file type requires considerable efforts. A file system level encryption implementation would solve this problem. Additionally, a more flexible configuration interface should be made like allowing users to configure their own cryptography application schema based on different environment and practical requirements. The user experience should be improved by redesigning the user interface based on some human computer interaction principles and adding practical functionalities. 
+
+\subsection{Testing  Criticism}
+
+Performance testing lacks of comparison with other cryptography algorithms or under different running environment. Consequently these numbers do not speak much about the performance of Secure Dropbox. In addition, the user experience testing lacks of expert participants although some of them have computer science background. Security experts usually have a better understanding in this area and they are able to propose constructive expertise about such a software product.
+
+\section{Future Work}
+
+\subsection{Version Control and File Recovering}
+
+Version control and file recovering service provided by Dropbox is disabled because there is no corresponding file encryption key version control module in Secure Dropbox. A possible design could be padding the file name with a timestamp and using this file name as the key of the version control table. This table records the history of certain file and its corresponding encryption key.
+
+\subsection{User Profile Management}
+
+With reference to user profile management, only the user registration and login have been implemented. The following jobs will be the implementation of a more generic user profile management module with common features like logout, account cancellation and more importantly password modification. The updating mechanism towards the expired RSA key pair which is also a part of user profile will be implemented as well.
+
+\subsection{Improvement of Sharing Mechanism}
+
+The file will keep using the same key until its source text has been modified and reloaded via Secure Dropbox again. For now file sharing does not change the file encryption key because the sharing URL could be cancelled or automatically expires after certain time slot. Also shared files could only be accessed after valid authentication and through Secure Dropbox user interface control. However, a new file sharing mechanism provides one time encryption key which guarantees a better security for the file. The file encryption key has been known to other users will no longer be available after sharing is cancelled.
+
+\subsection{File Sharing Refreshing}
+
+The file sharing URL generated by Dropbox expires in 3 hours. It is consistent with Dropbox OAuth access token because Dropbox does not allow third-party application who holding an expired access token could still access the shared file. To keep the file sharing until further cancellation, the file sharing record in the database should be refreshed periodically to update the previous URL and expiration timestamp. However, calling ``/media'' interface requires a valid token which has to be fetched by playing manual authentication. A proper mechanism of keeping the access token valid will call for more investigations.
+
+\subsection{File System Level Encryption}
+
+Secure Dropbox currently supports operation upon text file only because the implemented user space encryption could play file manipulations conveniently upon text files although it is sufficient as a prototype for demonstration. File system level encryption makes cryptography procedure transparent to user space applications. Dragging files into the specific folder with customized file system level system calls will trigger file encryption automatically and vice versa.
+
+\subsection{Configuration Interface}
+
+Now Secure Dropbox configuration could be carried out by changing parameters in Python source code. While an embedded configuration user interface could limit the options for configuration and execute parameter checking before the new configuration taking effect.
+
+\subsection{Multi-platform Implementation}
+
+There are lots of Dropbox users who want to synchronize their files between different terminals. Since Secure Dropbox is implemented with Python, it would not cost much effort to do the application transplantation between different operating systems. Python is also supported in some portable operating systems like Android and iOS. The difference to be concerned will be mainly about the computation and network capacity which impacts the performance significantly.
+
+\subsection{Better Local KMS Mechanism}
+
+Now Secure Dropbox local mode works based on KMS files stored in local file system which is generated after last login. It provides file encryption keychain and RSA key pair required in order to execute reading operation. Nevertheless, a better designed local KMS mechanism should guarantee Secure Dropbox users the same experience seamlessly as the regular mode does. An optimized local KMS mechanism is designed to perform delay tolerant KMS information updating when Internet access revives. 
